@@ -75,7 +75,7 @@ New API file: `api/redeem.js`. No new environment variables are needed.
 
 The site can send the client an M-Pesa prompt (STK push) on their phone. When they enter their PIN, Safaricom tells the site, the payment is checked again with Safaricom, and the plan is approved automatically with an access key. You see the M-Pesa receipt on the client's card.
 
-It stays **off** until you set it up. A personal number such as 0741080064 cannot receive prompts: you need a **Safaricom business till or paybill** and a Daraja app.
+It stays **off** until you set it up. A personal number such as 0708813128 cannot receive prompts: you need a **Safaricom business till or paybill** and a Daraja app.
 
 1. Register at developer.safaricom.co.ke, create an app with **Lipa na M-Pesa**, and ask Safaricom to take it live (Go Live) with your till or paybill. Safaricom gives you the Consumer Key, Consumer Secret, Shortcode and Passkey.
 2. In Vercel, Settings, Environment Variables, add:

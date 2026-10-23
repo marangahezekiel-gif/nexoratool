@@ -26,7 +26,7 @@ Deriv digit analysis front end with a Deriv login, plan billing (USDT TRC20 and 
 Edit the top of the `<script>` in `index.html`:
 
 - `APP_ID`, `SITE`, `SCOPE`: Deriv app id, the site address and the login permission. The redirect URL in your Deriv app must be exactly `https://digitpulseai.site/`.
-- `WA`, `USDT`, `MPESA`, `PAYEE`: WhatsApp number and payment details.
+- `WA`, `USDT`, `MPESA`, `PAYEE`: WhatsApp number and payment details (USDT TRC20 address, M-Pesa number and account name). `USDT_QR` is the QR code of the `USDT` address as an inline SVG: if you change `USDT`, regenerate `USDT_QR` too.
 - `MAIL`: where client reviews are sent.
 - `PLANS`, `REV`: plans and sample reviews (replace the sample reviews with real ones).
 - `PREVIEW`: `false` in this repo. Set it to `true` only to test locally, because it shows test buttons that skip payment.
