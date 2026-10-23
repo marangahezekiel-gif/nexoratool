@@ -16,8 +16,8 @@ function enabled() {
 
 // Where Safaricom sends its answer. Set SITE_URL to change it (for a staging site); no trailing slash.
 function callbackBase() {
-  const u = String(E.SITE_URL || "https://digitpulseai.site").replace(/\/+$/, "");
-  return /^https:\/\/[a-z0-9.-]+(:[0-9]+)?$/i.test(u) ? u : "https://digitpulseai.site";
+  const u = String(E.SITE_URL || "https://nexoratool.site").replace(/\/+$/, "");
+  return /^https:\/\/[a-z0-9.-]+(:[0-9]+)?$/i.test(u) ? u : "https://nexoratool.site";
 }
 
 async function token() {

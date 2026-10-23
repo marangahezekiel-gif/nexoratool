@@ -18,14 +18,14 @@ Deriv digit analysis front end with a Deriv login, plan billing (USDT TRC20 and 
 ## Deploy on Vercel
 
 1. Import this repo as a new project. Framework: **Other**. Leave the build settings empty.
-2. Add the domain `digitpulseai.site`.
+2. Add the domain `nexoratool.site`.
 3. Follow `ADMIN_SETUP.md` to add the database and the `ADMIN_KEY` secret, then redeploy.
 
 ## Settings
 
 Edit the top of the `<script>` in `index.html`:
 
-- `APP_ID`, `SITE`, `SCOPE`: Deriv app id, the site address and the login permission. The redirect URL in your Deriv app must be exactly `https://digitpulseai.site/`.
+- `APP_ID`, `SITE`, `SCOPE`: Deriv app id, the site address and the login permission. The redirect URL in your Deriv app must be exactly `https://nexoratool.site/`.
 - `WA`, `USDT`, `MPESA`, `PAYEE`: WhatsApp number and payment details (USDT TRC20 address, M-Pesa number and account name). `USDT_QR` is the QR code of the `USDT` address as an inline SVG: if you change `USDT`, regenerate `USDT_QR` too.
 - `MAIL`: where client reviews are sent.
 - `PLANS`, `REV`: plans and sample reviews (replace the sample reviews with real ones).

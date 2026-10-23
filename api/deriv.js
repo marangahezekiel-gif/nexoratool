@@ -8,7 +8,7 @@
 const L = require("./_lib");
 
 const APP_ID = "34KOBghNBaceL6LBJIsb6";
-const SITE = "https://digitpulseai.site/";
+const SITE = "https://nexoratool.site/";
 
 module.exports = async (req, res) => {
   if (req.method !== "POST") return L.send(res, 405, { error: "method" });

@@ -1,6 +1,6 @@
 # DigitpulseAi admin setup
 
-The admin panel lives at **https://digitpulseai.site/admin**. It only works with a secret key that you create. Follow these steps once.
+The admin panel lives at **https://nexoratool.site/admin**. It only works with a secret key that you create. Follow these steps once.
 
 ## 1. Add the database (about 2 minutes)
 
@@ -23,7 +23,7 @@ Environment variables only apply to new deployments. Open **Deployments**, choos
 
 ## 4. Sign in
 
-Open `https://digitpulseai.site/admin` and enter your key. Without the key the page shows nothing and changes nothing.
+Open `https://nexoratool.site/admin` and enter your key. Without the key the page shows nothing and changes nothing.
 
 ## Everyday use
 
@@ -100,4 +100,4 @@ In /admin, the "Limited offer" card at the top has **Start 8-hour offer** (tap t
 
 ## Security
 
-See SECURITY.md for what is protected and the short list of things only you can do (strong ADMIN_KEY, 2FA, private repository). Optional environment variable: `SITE_URL` (default https://digitpulseai.site) sets where Safaricom sends M-Pesa answers, only needed for a staging site.
+See SECURITY.md for what is protected and the short list of things only you can do (strong ADMIN_KEY, 2FA, private repository). Optional environment variable: `SITE_URL` (default https://nexoratool.site) sets where Safaricom sends M-Pesa answers, only needed for a staging site.

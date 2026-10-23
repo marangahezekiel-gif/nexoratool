@@ -5,7 +5,7 @@
 - **/admin** and `/api/admin`: every call needs the ADMIN_KEY (checked in constant time). 10 wrong tries lock an address for about 15 minutes. If ADMIN_KEY is missing or shorter than 12 characters the admin API switches itself off.
 - **Cross-site protection**: the endpoints refuse requests that come from another website (Origin / Sec-Fetch-Site check) and oversized requests.
 - **Rate limits** on payment requests, status checks, key redemption, Deriv login, M-Pesa prompts, offer checks and wrong M-Pesa callback secrets. Counters always get an expiry, so they cannot get stuck.
-- **M-Pesa**: the amount is worked out on the server, the callback address is fixed (`SITE_URL`, default https://digitpulseai.site), the callback needs a secret, and every success is re-checked with Safaricom before approving.
+- **M-Pesa**: the amount is worked out on the server, the callback address is fixed (`SITE_URL`, default https://nexoratool.site), the callback needs a secret, and every success is re-checked with Safaricom before approving.
 - **Input**: ids and keys are matched against strict patterns; text is stripped of control characters and angle brackets; the pages build HTML with escaping or DOM calls.
 - **Headers** (vercel.json): Content-Security-Policy (site and admin), X-Frame-Options DENY, nosniff, HSTS, Referrer-Policy, Permissions-Policy, Cross-Origin-Opener-Policy. API answers are never cached.
 - **No third-party packages**, so nothing to patch in dependencies. Node 20 or newer.
