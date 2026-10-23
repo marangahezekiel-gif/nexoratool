@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DigitpulseAi</title>
 <link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#0b1020">
+<meta name="theme-color" content="#0a1730">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="DigitpulseAi">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
-:root{--bg:#0b1020;--card:#141b34;--bd:#263056;--tx:#e8ecff;--mu:#9aa6d6;--ac:#22d3a6;--ac2:#6366f1;--wr:#fbbf24;
+:root{--bg:#0a1730;--card:#0f2347;--bd:#213f78;--tx:#e8efff;--mu:#9fb3dc;--ac:#5b9bff;--ac2:#1d4ed8;--wr:#fbbf24;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f6ff;--card:#fff;--bd:#d9def5;--tx:#141b34;--mu:#5b6591;--ac:#0d9f7e;--ac2:#4f46e5;--wr:#b45309}}
-:root[data-theme="light"]{--bg:#f4f6ff;--card:#fff;--bd:#d9def5;--tx:#141b34;--mu:#5b6591;--ac:#0d9f7e;--ac2:#4f46e5;--wr:#b45309}
-:root[data-theme="dark"]{--bg:#0b1020;--card:#141b34;--bd:#263056;--tx:#e8ecff;--mu:#9aa6d6;--ac:#22d3a6;--ac2:#6366f1;--wr:#fbbf24}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef3ff;--card:#fff;--bd:#cfdbf5;--tx:#0a1730;--mu:#4b5c85;--ac:#0b3b91;--ac2:#0a2a6b;--wr:#b45309}}
+:root[data-theme="light"]{--bg:#eef3ff;--card:#fff;--bd:#cfdbf5;--tx:#0a1730;--mu:#4b5c85;--ac:#0b3b91;--ac2:#0a2a6b;--wr:#b45309}
+:root[data-theme="dark"]{--bg:#0a1730;--card:#0f2347;--bd:#213f78;--tx:#e8efff;--mu:#9fb3dc;--ac:#5b9bff;--ac2:#1d4ed8;--wr:#fbbf24}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
@@ -28,7 +28,7 @@ nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:
 h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:.2em 0}
 h2{margin:.2em 0 .6em}
 p{color:var(--mu)}
-.btn{background:linear-gradient(135deg,var(--ac2),var(--ac));color:#fff;border:0;border-radius:10px;padding:12px 20px;font-size:1rem;font-weight:700;cursor:pointer}
+.btn{background:linear-gradient(135deg,#14388a,#2563eb);color:#fff;border:0;border-radius:10px;padding:12px 20px;font-size:1rem;font-weight:700;cursor:pointer}
 .btn.g{background:transparent;border:1px solid var(--bd);color:var(--tx)}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
@@ -36,7 +36,7 @@ p{color:var(--mu)}
 .plan{cursor:pointer;position:relative;transition:.15s}
 .plan:hover,.plan.sel{border-color:var(--ac);transform:translateY(-2px)}
 .price{font-size:2rem;font-weight:800}.price small{font-size:.9rem;color:var(--mu);font-weight:400}
-.tag{position:absolute;top:-10px;right:14px;background:var(--ac);color:#04221b;font-size:.7rem;font-weight:800;padding:2px 10px;border-radius:99px}
+.tag{position:absolute;top:-10px;right:14px;background:var(--ac2);color:#fff;font-size:.7rem;font-weight:800;padding:2px 10px;border-radius:99px}
 ul{padding-left:18px;color:var(--mu)}
 .row{display:flex;gap:8px;align-items:center;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:10px;margin:6px 0 14px}
 .row code{flex:1;min-width:0;word-break:break-all;font-size:.9rem}
@@ -88,7 +88,7 @@ details{border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:8
 
 /* signal board */
 body.dxon .w{max-width:none}
-body.dxon{color-scheme:dark;--bg:#0b1020;--card:#141b34;--bd:#263056;--tx:#e8ecff;--mu:#9aa6d6;--ac:#22d3a6;--ac2:#6366f1;--wr:#fbbf24}
+body.dxon{color-scheme:dark;--bg:#0a1730;--card:#0f2347;--bd:#213f78;--tx:#e8efff;--mu:#9fb3dc;--ac:#5b9bff;--ac2:#1d4ed8;--wr:#fbbf24}
 .dxr{display:block}.dxt0{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}.dxt0 h2{margin:0;font-size:1.3rem;flex:1 1 auto}
 .dxb2{background:#0d1424;color:#cfd8f5;border:1px solid #2a3550;border-radius:4px;padding:9px 14px;font:inherit;font-weight:700;font-size:.9rem;cursor:pointer;min-height:40px}
 .dxb2.on{background:#2ee6b6;border-color:#2ee6b6;color:#03150f}.dxb2:disabled{opacity:.45;cursor:not-allowed}
@@ -152,14 +152,14 @@ body{top:0!important;position:static!important}.goog-te-banner-frame,.skiptransl
 <nav><div class="logo" translate="no">Digitpulse<b>Ai</b></div><div class="nr"><button class="pill" id="cur" hidden aria-haspopup="dialog" aria-label="Currency" translate="no" onclick="openCur()" style="cursor:pointer;background:none;color:var(--tx)">USD</button><button class="pill" id="ib" hidden onclick="installApp()" style="cursor:pointer;background:none;color:var(--tx)">&#128241; Install app</button><button class="pill" id="lg" onclick="openLang()" aria-haspopup="dialog" aria-label="Language" style="cursor:pointer;background:none;color:var(--tx)">&#127760; <span id="lgc" translate="no">EN</span></button></div></nav>
 <main id="app"></main>
 </div>
-<a class="wa" href="https://wa.me/254741092009" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172; Chat with us</a>
+<a class="wa" href="https://wa.me/254710343624" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172; Chat with us</a>
 <div class="ov" id="lov" hidden role="dialog" aria-modal="true" aria-labelledby="lt" onclick="if(event.target===this)closeLang()"><div class="sheet"><div class="sh"><b id="lt">Language</b><button class="x" onclick="closeLang()" aria-label="Close">&times;</button></div><input id="ls" type="search" placeholder="Search language" aria-label="Search language" autocomplete="off" autocapitalize="off" spellcheck="false" oninput="lfill(this.value)"><div id="ll" translate="no" class="notranslate"></div><p id="le" class="note" hidden>No language found.</p></div></div>
 <div class="ov" id="cov" hidden role="dialog" aria-modal="true" aria-labelledby="cti" onclick="if(event.target===this)closeCur()"><div class="sheet"><div class="sh"><b id="cti">Currency</b><button class="x" onclick="closeCur()" aria-label="Close">&times;</button></div><input id="cs" type="search" placeholder="Search currency or country" aria-label="Search currency or country" autocomplete="off" autocapitalize="off" spellcheck="false" oninput="cfill(this.value)"><div id="cl" translate="no" class="notranslate"></div><p id="ce" class="note" hidden>No currency found.</p></div></div>
 <div id="toast" role="status" hidden></div>
 <div id="gt" translate="no" style="position:fixed;left:0;top:0;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none"></div>
 <script>
 /* Deriv app id; in Deriv's dashboard set the redirect URL for this app to https://digitpulseai.site/ */
-var APP_ID="34yJS0kUHIBFwADximqJH",SITE="https://digitpulseai.site/",WA="254741092009",USDT="TMF2vukXw66DRBxc6qsWNczDgEm5SB7SLG",MPESA="0708813128",PAYEE="HANS REMA MOGAKA";
+var APP_ID="34yJS0kUHIBFwADximqJH",SITE="https://digitpulseai.site/",WA="254710343624",USDT="TMF2vukXw66DRBxc6qsWNczDgEm5SB7SLG",MPESA="0708813128",PAYEE="HANS REMA MOGAKA";
 /* QR code of the USDT TRC20 address above (inline SVG, so no outside service sees the address). If USDT changes, regenerate this too. */
 var USDT_QR='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" shape-rendering="crispEdges" role="img" aria-label="QR code for the USDT TRC20 address"><rect width="35" height="35" fill="#fff"/><path fill="#000" d="M3 3h7v1h-7zM11 3h3v1h-3zM15 3h1v1h-1zM20 3h1v1h-1zM25 3h7v1h-7zM3 4h1v1h-1zM9 4h1v1h-1zM11 4h3v1h-3zM19 4h4v1h-4zM25 4h1v1h-1zM31 4h1v1h-1zM3 5h1v1h-1zM5 5h3v1h-3zM9 5h1v1h-1zM11 5h1v1h-1zM13 5h2v1h-2zM16 5h1v1h-1zM18 5h3v1h-3zM22 5h1v1h-1zM25 5h1v1h-1zM27 5h3v1h-3zM31 5h1v1h-1zM3 6h1v1h-1zM5 6h3v1h-3zM9 6h1v1h-1zM11 6h2v1h-2zM14 6h1v1h-1zM17 6h5v1h-5zM25 6h1v1h-1zM27 6h3v1h-3zM31 6h1v1h-1zM3 7h1v1h-1zM5 7h3v1h-3zM9 7h1v1h-1zM16 7h2v1h-2zM19 7h1v1h-1zM21 7h1v1h-1zM25 7h1v1h-1zM27 7h3v1h-3zM31 7h1v1h-1zM3 8h1v1h-1zM9 8h1v1h-1zM11 8h1v1h-1zM14 8h5v1h-5zM22 8h2v1h-2zM25 8h1v1h-1zM31 8h1v1h-1zM3 9h7v1h-7zM11 9h1v1h-1zM13 9h1v1h-1zM15 9h1v1h-1zM17 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM23 9h1v1h-1zM25 9h7v1h-7zM12 10h1v1h-1zM15 10h1v1h-1zM17 10h1v1h-1zM20 10h1v1h-1zM22 10h2v1h-2zM3 11h2v1h-2zM7 11h3v1h-3zM14 11h1v1h-1zM16 11h3v1h-3zM20 11h1v1h-1zM23 11h1v1h-1zM26 11h1v1h-1zM28 11h4v1h-4zM5 12h2v1h-2zM8 12h1v1h-1zM10 12h1v1h-1zM12 12h2v1h-2zM15 12h1v1h-1zM21 12h2v1h-2zM24 12h1v1h-1zM26 12h6v1h-6zM4 13h6v1h-6zM11 13h1v1h-1zM14 13h5v1h-5zM21 13h1v1h-1zM23 13h4v1h-4zM29 13h3v1h-3zM4 14h2v1h-2zM7 14h2v1h-2zM10 14h2v1h-2zM13 14h2v1h-2zM16 14h1v1h-1zM20 14h5v1h-5zM28 14h1v1h-1zM30 14h1v1h-1zM3 15h1v1h-1zM9 15h3v1h-3zM13 15h1v1h-1zM15 15h2v1h-2zM22 15h1v1h-1zM24 15h1v1h-1zM27 15h1v1h-1zM30 15h1v1h-1zM4 16h3v1h-3zM8 16h1v1h-1zM12 16h1v1h-1zM16 16h2v1h-2zM19 16h1v1h-1zM21 16h2v1h-2zM26 16h2v1h-2zM29 16h1v1h-1zM5 17h1v1h-1zM8 17h5v1h-5zM18 17h4v1h-4zM23 17h5v1h-5zM29 17h1v1h-1zM31 17h1v1h-1zM5 18h1v1h-1zM7 18h1v1h-1zM10 18h4v1h-4zM15 18h1v1h-1zM17 18h2v1h-2zM20 18h3v1h-3zM24 18h1v1h-1zM28 18h1v1h-1zM31 18h1v1h-1zM4 19h2v1h-2zM7 19h1v1h-1zM9 19h2v1h-2zM12 19h1v1h-1zM14 19h1v1h-1zM16 19h3v1h-3zM20 19h1v1h-1zM22 19h1v1h-1zM24 19h1v1h-1zM26 19h1v1h-1zM30 19h2v1h-2zM3 20h1v1h-1zM6 20h1v1h-1zM10 20h1v1h-1zM12 20h1v1h-1zM15 20h1v1h-1zM19 20h3v1h-3zM24 20h2v1h-2zM27 20h1v1h-1zM29 20h1v1h-1zM6 21h2v1h-2zM9 21h2v1h-2zM12 21h7v1h-7zM20 21h2v1h-2zM23 21h2v1h-2zM26 21h3v1h-3zM31 21h1v1h-1zM5 22h2v1h-2zM8 22h1v1h-1zM10 22h1v1h-1zM12 22h1v1h-1zM14 22h1v1h-1zM16 22h1v1h-1zM19 22h3v1h-3zM24 22h2v1h-2zM28 22h1v1h-1zM30 22h2v1h-2zM3 23h3v1h-3zM9 23h4v1h-4zM15 23h2v1h-2zM19 23h10v1h-10zM30 23h1v1h-1zM11 24h2v1h-2zM16 24h2v1h-2zM19 24h1v1h-1zM23 24h1v1h-1zM27 24h2v1h-2zM30 24h1v1h-1zM3 25h7v1h-7zM13 25h1v1h-1zM18 25h1v1h-1zM20 25h4v1h-4zM25 25h1v1h-1zM27 25h3v1h-3zM31 25h1v1h-1zM3 26h1v1h-1zM9 26h1v1h-1zM11 26h1v1h-1zM13 26h1v1h-1zM15 26h1v1h-1zM17 26h1v1h-1zM20 26h4v1h-4zM27 26h2v1h-2zM30 26h1v1h-1zM3 27h1v1h-1zM5 27h3v1h-3zM9 27h1v1h-1zM11 27h2v1h-2zM14 27h1v1h-1zM16 27h2v1h-2zM19 27h1v1h-1zM22 27h6v1h-6zM29 27h1v1h-1zM3 28h1v1h-1zM5 28h3v1h-3zM9 28h1v1h-1zM13 28h1v1h-1zM15 28h1v1h-1zM18 28h1v1h-1zM22 28h1v1h-1zM24 28h1v1h-1zM26 28h1v1h-1zM28 28h1v1h-1zM31 28h1v1h-1zM3 29h1v1h-1zM5 29h3v1h-3zM9 29h1v1h-1zM13 29h7v1h-7zM22 29h1v1h-1zM24 29h1v1h-1zM26 29h1v1h-1zM30 29h2v1h-2zM3 30h1v1h-1zM9 30h1v1h-1zM11 30h4v1h-4zM16 30h1v1h-1zM19 30h7v1h-7zM27 30h2v1h-2zM30 30h2v1h-2zM3 31h7v1h-7zM11 31h1v1h-1zM13 31h1v1h-1zM15 31h2v1h-2zM22 31h6v1h-6zM30 31h1v1h-1z"/></svg>';
 var PLANS=[
