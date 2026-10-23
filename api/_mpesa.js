@@ -61,8 +61,8 @@ async function push(amount, phone, callbackUrl) {
     PartyB: E.MPESA_PARTYB || E.MPESA_SHORTCODE,
     PhoneNumber: phone,
     CallBackURL: callbackUrl,
-    AccountReference: "DigitpulseAi",
-    TransactionDesc: "DigitpulseAi plan",
+    AccountReference: "Nexora Tool",
+    TransactionDesc: "Nexora plan",
   });
 }
 

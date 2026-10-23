@@ -1,4 +1,4 @@
-# DigitpulseAi security notes (owner only)
+# Nexora Tool security notes (owner only)
 
 ## What the code protects
 - **Secrets** live only in Vercel environment variables (ADMIN_KEY, the Upstash tokens, the M-Pesa keys). None is in the code or in the git history (checked on every branch). `.gitignore` blocks `.env` files from being committed.

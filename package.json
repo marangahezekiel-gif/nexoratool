@@ -1,7 +1,7 @@
 {
-  "name": "digitpulseai",
+  "name": "nexoratool",
   "private": true,
   "version": "1.0.0",
-  "description": "DigitpulseAi front end with a small payment-approval backend",
+  "description": "Nexora Tool front end with a small payment-approval backend",
   "engines": { "node": ">=20" }
 }

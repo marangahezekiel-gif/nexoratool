@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>DigitpulseAi Admin</title>
+<title>Nexora Tool Admin</title>
 <style>
 /* Layout: one calm column. Summary tiles first, then filters and search, then one card per payment request. */
 :root{--bg:#0b1020;--card:#141b34;--soft:#0f1630;--bd:#263056;--tx:#e8ecff;--mu:#9aa6d6;--ac:#22d3a6;--ac2:#6366f1;--wr:#fbbf24;--bad:#f87171;color-scheme:dark;
@@ -98,7 +98,7 @@ function errText(e){
 
 function pk(k){k=String(k||"");return"DPAI-"+k.slice(0,4)+"-"+k.slice(4,8)+"-"+k.slice(8)}
 function digits(c){var d=String(c||"").replace(/\D/g,"");if(d.length===10&&d.charAt(0)==="0")d="254"+d.slice(1);return d.length>=9?d:""}
-function sendUrl(contact,k){var t="Your DigitpulseAi access key: "+pk(k)+"\nOpen "+location.origin+" and tap \"Access using a key\". The key works on up to 2 devices. Please keep it private.";return"https://wa.me/"+digits(contact)+"?text="+encodeURIComponent(t)}
+function sendUrl(contact,k){var t="Your Nexora Tool access key: "+pk(k)+"\nOpen "+location.origin+" and tap \"Access using a key\". The key works on up to 2 devices. Please keep it private.";return"https://wa.me/"+digits(contact)+"?text="+encodeURIComponent(t)}
 function copyText(t){var ok=function(){toast("Copied.")},fb=function(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");ok()}catch(e){toast("Copy failed. Select and copy it by hand.")}a.remove()};
   try{navigator.clipboard.writeText(t).then(ok,fb)}catch(e){fb()}}
 function fakeKey(){var c="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",s="",i;for(i=0;i<12;i++)s+=c[Math.floor(Math.random()*32)];return s}
@@ -134,7 +134,7 @@ function demoApi(method,b){
 function loginView(msg){
   stopTimer();root.innerHTML="";
   var box=h("div",{"class":"login"}),m=h("p",{"class":"msg",role:"alert"},[msg||""]);
-  box.appendChild(h("div",{"class":"logo"},["Digitpulse",h("b",{},["Ai"])," Admin"]));
+  box.appendChild(h("div",{"class":"logo"},["Nexora",h("b",{},["Tool"])," Admin"]));
   if(DEMO_ONLY){
     box.appendChild(h("p",{style:"color:var(--mu)"},["This is a preview with sample data. Nothing is saved and no real clients are shown."]));
     box.appendChild(h("button",{"class":"btn",type:"button",onclick:function(){DEMO=true;DEMO_ITEMS=sample();load(false)}},["Open the demo"]));
@@ -151,7 +151,7 @@ function tile(k,label){var n=h("div",{"class":"n"},["0"]);els.tiles[k]=n;return 
 function panel(){
   root.innerHTML="";els.tiles={};els.pills={};
   root.appendChild(h("div",{"class":"top"},[
-    h("div",{"class":"logo"},["Digitpulse",h("b",{},["Ai"])," Admin"]),
+    h("div",{"class":"logo"},["Nexora",h("b",{},["Tool"])," Admin"]),
     h("div",{"class":"acts"},[btn("Refresh","g sm",function(){refresh(false)}),btn("Sign out","g sm",function(){signOut()})])]));
   if(DEMO)root.appendChild(h("div",{"class":"banner"},["Demo data. Nothing here is saved."]));
   root.appendChild(h("div",{"class":"tiles"},[tile("pending","Waiting"),tile("approved","Active"),tile("closed","Closed")]));

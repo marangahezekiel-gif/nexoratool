@@ -1,5 +1,5 @@
 "use strict";
-// Shared helpers for the DigitpulseAi serverless functions.
+// Shared helpers for the Nexora Tool serverless functions.
 // Storage is an Upstash Redis database (added from the Vercel Marketplace). Its REST
 // credentials arrive as environment variables; both common names are supported.
 const crypto = require("crypto");

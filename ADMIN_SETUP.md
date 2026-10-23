@@ -1,12 +1,12 @@
-# DigitpulseAi admin setup
+# Nexora Tool admin setup
 
 The admin panel lives at **https://nexoratool.site/admin**. It only works with a secret key that you create. Follow these steps once.
 
 ## 1. Add the database (about 2 minutes)
 
-1. In Vercel, open the `digitpulseai` project and go to **Storage**.
+1. In Vercel, open the `nexoratool` project and go to **Storage**.
 2. Choose **Upstash Redis** from the Marketplace and pick the free plan.
-3. Connect it to the `digitpulseai` project. Vercel adds the connection settings for you (`KV_REST_API_URL` and `KV_REST_API_TOKEN`, or the `UPSTASH_REDIS_REST_*` pair). The code accepts both.
+3. Connect it to the `nexoratool` project. Vercel adds the connection settings for you (`KV_REST_API_URL` and `KV_REST_API_TOKEN`, or the `UPSTASH_REDIS_REST_*` pair). The code accepts both.
 
 ## 2. Create your admin key
 

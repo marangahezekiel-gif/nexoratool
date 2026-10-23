@@ -1,4 +1,4 @@
-# DigitpulseAi
+# Nexora Tool
 
 Deriv digit analysis front end with a Deriv login, plan billing (USDT TRC20 and M-Pesa), WhatsApp payment confirmation, a signal dashboard and an owner-only admin panel for approving payments.
 
