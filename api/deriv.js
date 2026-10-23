@@ -7,7 +7,7 @@
 // real or demo (for the welcome message).
 const L = require("./_lib");
 
-const APP_ID = "34yJS0kUHIBFwADximqJH";
+const APP_ID = "34KOBghNBaceL6LBJIsb6";
 const SITE = "https://digitpulseai.site/";
 
 module.exports = async (req, res) => {
